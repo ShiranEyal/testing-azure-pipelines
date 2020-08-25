@@ -2,7 +2,8 @@ trigger:
 - master
 steps:
   - script: |
-    'echo $(System.DefaultWorkingDirectory)'
+      'echo $(System.DefaultWorkingDirectory)'
+    displayName: 'check directory'
 
   - task: NodeTool@0
     inputs:
