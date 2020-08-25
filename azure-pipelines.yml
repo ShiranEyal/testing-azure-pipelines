@@ -1,7 +1,12 @@
-  
+variables:
+
+
 trigger:
 - master
 steps:
+  - script: |
+    'echo $(System.DefaultWorkingDirectory)'
+
   - task: NodeTool@0
     inputs:
       versionSpec: '8.x'
